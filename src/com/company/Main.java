@@ -46,12 +46,7 @@ public class Main {
         System.out.println("=============================================");
 
         Gostinisa konoktor = new Gostinisa("Sovetskaya 100", gosti);
-        count = 0;
-        for (Person g : gosti) {
-            System.out.println(g);
-            count++;
-        }
-        System.out.println("Gostnisada" + " " + count + " " + " konok bar" + " " + konoktor.getAdress());
+        System.out.println("Gostnisada" + " " + konoktor.getGosti().length + " " + " konok bar" + " " + konoktor.getAdress());
         konoktor.rent();
 
 
